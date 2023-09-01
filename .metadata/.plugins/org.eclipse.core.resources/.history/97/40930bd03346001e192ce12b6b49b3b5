@@ -1,0 +1,8 @@
+package com.sfx.mp;
+
+import com.sfx.pojo.Vehicle;
+
+public interface MaintanenceProcedure {
+	void performProcedure(Vehicle vehicle);
+	int procedureCharge();
+}

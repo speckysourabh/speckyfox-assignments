@@ -1,0 +1,5 @@
+package com.sfx.enums;
+
+public enum DisplayEnum {
+	HD, 4K, 8KVR
+}

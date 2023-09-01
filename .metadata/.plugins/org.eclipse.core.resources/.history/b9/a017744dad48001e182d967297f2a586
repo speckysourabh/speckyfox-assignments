@@ -1,0 +1,15 @@
+package com.sfx.component.controller;
+
+public class StandardController implements Controller {
+
+	@Override
+	public void controllerType() {
+		System.out.println("Standard Controller");
+	}
+	
+	@Override
+	public void price() {
+		System.out.println(10000);
+	}
+
+}

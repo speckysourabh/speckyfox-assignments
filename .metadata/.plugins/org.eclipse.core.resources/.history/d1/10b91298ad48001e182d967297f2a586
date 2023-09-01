@@ -1,0 +1,15 @@
+package com.sfx.component.processor;
+
+public class AdvancedProcessor implements Processor {
+
+	@Override
+	public void processorType() {
+		System.out.println("Advanced Processor");
+	}
+
+	@Override
+	public void price() {
+		System.out.println(20000);
+	}
+
+}

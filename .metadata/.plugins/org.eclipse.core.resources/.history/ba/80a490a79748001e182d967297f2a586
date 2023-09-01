@@ -1,0 +1,5 @@
+package com.sfx.enums;
+
+public class ProcessorEnum {
+	BASIC, ADVANCED, PRO_GAMING
+}

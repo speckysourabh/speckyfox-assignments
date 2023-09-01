@@ -1,0 +1,11 @@
+package com.sfx.print;
+
+import com.sfx.pojo.Customer;
+import com.sfx.pojo.Vehicle;
+
+public class InvoicePrinter {
+    public void generateInvoice(Customer customer, Vehicle vehicle) {
+        // Generate sales invoice for the customer and vehicle
+        System.out.println("Generating invoice for " + customer.getName() + " for " + vehicle.getModel());
+    }
+}

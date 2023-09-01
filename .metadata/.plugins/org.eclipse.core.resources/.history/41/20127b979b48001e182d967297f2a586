@@ -1,0 +1,9 @@
+package com.sfx.factory;
+
+import com.sfx.pojo.GamingConsole;
+
+public interface GamingConsoleBundleFactory {
+	
+	GamingConsole getInstance();
+
+}

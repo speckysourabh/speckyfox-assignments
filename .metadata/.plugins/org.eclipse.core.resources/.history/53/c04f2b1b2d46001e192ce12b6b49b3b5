@@ -1,0 +1,5 @@
+package com.sfx.mp;
+
+public interface MaintanenceProcedure {
+	void performProcedure();
+}

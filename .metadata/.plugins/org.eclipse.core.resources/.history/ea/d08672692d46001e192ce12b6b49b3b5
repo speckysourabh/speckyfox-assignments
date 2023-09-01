@@ -1,0 +1,12 @@
+package com.sfx.mp;
+
+import com.sfx.Vehicle;
+
+public class OilChangeProcedure implements MaintanenceProcedure {
+
+	@Override
+	public void performProcedure(Vehicle vehicle) {
+		
+	}
+
+}

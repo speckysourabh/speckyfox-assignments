@@ -1,0 +1,24 @@
+package com.sfx;
+
+public class Car extends Vehicle {
+	
+	private static boolean maintenanceReq = true;
+
+	@Override
+	public int calculateMaintenancePrice() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public boolean checkMaintenance() {
+		return maintenanceReq;
+	}
+
+	@Override
+	public boolean maintenance() {
+		maintenanceReq = false;
+		return false;
+	}
+
+}

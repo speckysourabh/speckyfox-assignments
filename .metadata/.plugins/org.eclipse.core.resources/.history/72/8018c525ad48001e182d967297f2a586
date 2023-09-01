@@ -1,0 +1,15 @@
+package com.sfx.component.controller;
+
+public class MotionSensingController implements Controller {
+
+	@Override
+	public void controllerType() {
+		System.out.println("Motion Sensing Controller");
+	}
+
+	@Override
+	public void price() {
+		System.out.println(15000);
+	}
+
+}

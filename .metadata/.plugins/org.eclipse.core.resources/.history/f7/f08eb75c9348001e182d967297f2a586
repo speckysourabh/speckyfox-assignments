@@ -1,0 +1,18 @@
+package com.sfx.factory;
+
+public class ProGamerBundle implements ConsoleGamingFactory {
+	@Override
+	public Processor createProcessor() {
+		return new ProcessorFactory().getProcessor("BASIC");
+	}
+
+	@Override
+	public Display createDisplay() {
+		return new DisplayFactory().getDisplay("HD");
+	}
+
+	@Override
+	public Controller createController() {
+		return new ControllerFactory().getController("STANDARD");
+	}
+}

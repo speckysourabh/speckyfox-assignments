@@ -1,0 +1,5 @@
+package com.sfx.util;
+
+public class MaintenanceProcedureFactory {
+
+}

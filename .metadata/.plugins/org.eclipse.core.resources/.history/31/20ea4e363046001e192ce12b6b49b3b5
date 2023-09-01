@@ -1,0 +1,10 @@
+package com.sfx.sales;
+
+import com.sfx.pojo.Customer;
+import com.sfx.pojo.Vehicle;
+
+public class CustomerHandling {
+	public void handleInquiry(Customer customer, Vehicle vehicle) {
+		System.out.println("Handling inquiry from " + customer.getName() + " about " + vehicle.getModel());
+	}
+}

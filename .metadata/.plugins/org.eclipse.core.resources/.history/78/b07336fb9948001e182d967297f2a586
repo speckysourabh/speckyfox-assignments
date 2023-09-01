@@ -1,0 +1,10 @@
+package com.sfx.component.display;
+
+public class Display4k implements Display {
+
+	@Override
+	public void displayType() {
+		System.out.println("HD display");
+	}
+
+}

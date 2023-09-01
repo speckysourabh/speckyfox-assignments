@@ -1,0 +1,12 @@
+package com.sfx.builder;
+
+import com.sfx.pojo.GamingConsole;
+
+public interface ConsoleBuilder {
+	
+	void processor(String processorType);
+	void display(String displayType);
+	void controller(String controllerType);
+	GamingConsole build();
+
+}

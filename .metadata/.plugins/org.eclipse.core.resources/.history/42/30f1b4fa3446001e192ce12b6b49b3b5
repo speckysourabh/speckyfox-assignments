@@ -1,0 +1,14 @@
+package com.sfx.vehicle;
+
+public class VehicleFactory {
+	
+	public static Vehicle getVehicle(String vehicle) {
+		switch(vehicle) {
+		
+			"bike" : {
+				
+			}
+		}
+	}
+	
+}

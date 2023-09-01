@@ -1,0 +1,67 @@
+package com.sfx;
+
+import java.util.Optional;
+import java.util.Scanner;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.sfx.mp.MaintanenceProcedure;
+import com.sfx.mp.OilChangeProcedure;
+import com.sfx.pojo.Customer;
+import com.sfx.pojo.GeneralCustomer;
+import com.sfx.pojo.VipCustomer;
+import com.sfx.util.CustomerUtil;
+import com.sfx.vehicle.Car;
+import com.sfx.vehicle.Vehicle;
+import com.sfx.vehicle.VehicleFactory;
+
+@SpringBootApplication
+public class MvmsApplication implements CommandLineRunner {
+
+	private static final Logger LOGGER = LoggerFactory.getLogger(MvmsApplication.class);
+
+	public static void main(String[] args) {
+		SpringApplication.run(MvmsApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		Scanner scanner = new Scanner(System.in);
+		LOGGER.info("Welcome to \"Modular Vehicle Management System\"");
+		LOGGER.info("Enter your name :");
+		String customerName = scanner.nextLine();
+		LOGGER.info("Enter your mobile number :");
+		Long mobNumber = scanner.nextLong();
+		LOGGER.info("Enter your email :");
+		String email = scanner.next();
+		
+		Customer customer;
+		
+		if(CustomerUtil.isCustomerVIP(email)) {
+			customer = new VipCustomer(customerName, mobNumber, email, email);
+		} else {
+			customer = new GeneralCustomer(customerName, mobNumber, email, email)
+		}
+		
+		LOGGER.info("Enter your vehicle model :");
+		String vehicleName = scanner.next().toLowerCase();
+		LOGGER.info("Enter vehicle make :");
+		String vehicleMake = scanner.next();
+		LOGGER.info("Enter vehicle year :");
+		int vehicleYear = scanner.nextInt();
+		LOGGER.info("Enter vehicle price :");
+		double vehiclePrice = scanner.nextDouble();
+		Optional<Vehicle> vehicle = VehicleFactory.getVehicle(scanner.next().toLowerCase());
+		MaintanenceProcedure maintanenceProcedure = new OilChangeProcedure();
+		if(vehicle.isPresent()) {
+			LOGGER.info("{}", vehicle.get().calculateMaintenancePrice(maintanenceProcedure));
+		} else {
+			LOGGER.info("Service not avilable");
+		}
+	}
+
+}

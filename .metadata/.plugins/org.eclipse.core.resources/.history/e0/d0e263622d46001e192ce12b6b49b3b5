@@ -1,0 +1,12 @@
+package com.sfx.mp;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.sfx.MvmsApplication;
+import com.sfx.Vehicle;
+
+public interface MaintanenceProcedure {
+	private static final Logger LOGGER = LoggerFactory.getLogger(MvmsApplication.class);
+	void performProcedure(Vehicle vehicle);
+}

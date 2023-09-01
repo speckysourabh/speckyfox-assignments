@@ -1,0 +1,7 @@
+package com.sfx.component;
+
+public interface Display {
+
+	void resolution();
+	
+}

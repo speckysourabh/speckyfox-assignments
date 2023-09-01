@@ -1,0 +1,19 @@
+package com.sfx.factory;
+
+import java.util.List;
+
+public class GamingConsoleBundlesSingleton {
+	
+	private static GamingConsoleBundlesSingleton bundlesSingleton = null;
+	
+	private GamingConsoleBundlesSingleton() {}
+
+	public List<GamingConsoleBundle> getGamingConsoleBundles() {
+		
+	}
+	
+	public static GamingConsoleBundlesSingleton getInstance() {
+		
+	}
+	
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.sfx.vehicle.VehicleDb"/>
+    <fullyQualifiedTypeName name="com.sfx.vehicle.VehicleFactory"/>
+    <fullyQualifiedTypeName name="java.util.stream.Stream"/>
+    <fullyQualifiedTypeName name="java.util.stream.Stream.Builder"/>
+    <fullyQualifiedTypeName name="com.sfx.component.controller.ProController"/>
+    <fullyQualifiedTypeName name="com.sfx.component.controller.MotionSensingController"/>
+    <fullyQualifiedTypeName name="com.sfx.component.controller.StandardController"/>
+    <fullyQualifiedTypeName name="com.sfx.component.display.DisplayHD"/>
+    <fullyQualifiedTypeName name="com.sfx.component.display.Display4k"/>
+    <fullyQualifiedTypeName name="com.sfx.component.display.Display8kVR"/>
+    <fullyQualifiedTypeName name="com.sfx.component.processor.BasicProcessor"/>
+    <fullyQualifiedTypeName name="com.sfx.component.processor.AdvancedProcessor"/>
+    <fullyQualifiedTypeName name="com.sfx.component.processor.ProGamingProcessor"/>
+    <fullyQualifiedTypeName name="com.sfx.factory.ConsoleGamingFactory"/>
+    <fullyQualifiedTypeName name="com.sfx.factory.BeginnerBundle"/>
+    <fullyQualifiedTypeName name="com.sfx.enums.DisplayEnum"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.CommandLineRunner"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.sfx.factory.GamingConsoleBundle"/>
+    <fullyQualifiedTypeName name="com.sfx.factory.BeginnerBundleFactory"/>
+    <fullyQualifiedTypeName name="com.sfx.factory.GamingConsoleBundlesSingleton"/>
+    <fullyQualifiedTypeName name="com.sfx.factory.AverageGamerBundle"/>
+    <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
+    <fullyQualifiedTypeName name="com.sfx.pojo.GamingConsole"/>
+    <fullyQualifiedTypeName name="com.sfx.factory.ProGamerBundle"/>
+    <fullyQualifiedTypeName name="com.sfx.component.processor.Processor"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.sfx.component.controller.Controller"/>
+    <fullyQualifiedTypeName name="com.sfx.factory.DisplayFactory"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.sfx.component.display.Display"/>
+    <fullyQualifiedTypeName name="com.sfx.factory.ProcessorFactory"/>
+    <fullyQualifiedTypeName name="com.sfx.factory.ControllerFactory"/>
+    <fullyQualifiedTypeName name="com.sfx.builder.GamingConsoleBuilder"/>
+</qualifiedTypeNameHistroy>

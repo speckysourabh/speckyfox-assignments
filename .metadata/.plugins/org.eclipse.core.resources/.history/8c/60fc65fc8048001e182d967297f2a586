@@ -1,0 +1,10 @@
+package com.sfx.component;
+
+public class BasicProcessor implements Processor {
+
+	@Override
+	public void processorType() {
+		System.out.println("Basic Processor");
+	}
+
+}

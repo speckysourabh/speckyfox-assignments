@@ -1,0 +1,10 @@
+package com.sfx.component.controller;
+
+public class ProController implements Controller {
+
+	@Override
+	public void controllerType() {
+		System.out.println("Standard Controller");
+	}
+
+}

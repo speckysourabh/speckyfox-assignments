@@ -1,0 +1,7 @@
+package com.sfx.mp;
+
+import com.sfx.Vehicle;
+
+public interface MaintanenceProcedure {
+	void performProcedure(Vehicle (type[]) collection.toArray(new type[collection.size()]));
+}

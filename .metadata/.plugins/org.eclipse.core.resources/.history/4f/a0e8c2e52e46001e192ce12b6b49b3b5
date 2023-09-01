@@ -1,0 +1,5 @@
+package com.sfx.print;
+
+public class InvoicePrinter {
+
+}

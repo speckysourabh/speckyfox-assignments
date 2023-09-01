@@ -1,0 +1,11 @@
+package com.sfx.component;
+
+public class HdDisplay implements Display {
+
+	@Override
+	public void displayType() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

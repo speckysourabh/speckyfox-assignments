@@ -1,0 +1,47 @@
+package com.sfx;
+
+import java.util.Scanner;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.sfx.builder.GamingConsoleBuilder;
+import com.sfx.factory.AverageGamerBundle;
+import com.sfx.factory.GamingConsoleBundlesSingleton;
+import com.sfx.pojo.GamingConsole;
+
+@SpringBootApplication
+public class MgcsApplication implements CommandLineRunner{
+	
+	Scanner scanner = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		SpringApplication.run(MgcsApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		
+		GamingConsole gamingConsole = GamingConsoleBuilder.builder().processor("BASIC").display("HD").controller("STANDARD").build();
+		gamingConsole.getProcessor().price();
+//		System.out.println("Welcome to \"Modular Gaming Console System\"");
+//		System.out.println("Choose an option :");
+//		System.out.println("1. Bundled Console Gaming System");
+//		System.out.println("2. Customized Console Gaming System");
+		
+//		switch(scanner.nextInt()) {
+//		case 1 : {
+//			new AverageGamerBundle().getInstance().show();
+//			GamingConsoleBundlesSingleton.getInstance().getGamingConsoleBundles().stream().forEach(e -> e.getInstance().show());
+//		}
+//		case 2 : {
+//			System.out.println("2");
+//		}
+//		default : {
+//			System.out.println("Wrong choice !");
+//		}
+//		}
+	}
+
+}

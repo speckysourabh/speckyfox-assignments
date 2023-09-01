@@ -1,0 +1,29 @@
+package com.sfx.factory;
+
+import com.sfx.component.controller.Controller;
+import com.sfx.component.controller.MotionSensingController;
+import com.sfx.component.controller.ProController;
+import com.sfx.component.controller.StandardController;
+
+public class ControllerFactory {
+
+	public Controller getController(String controllerType) {
+		Controller controller;
+		switch (controllerType.toUpperCase()) {
+		case "PRO_CONTROLLER": {
+			controller = new ProController();
+		}
+		case "MOTION_SENSING_CONTROLLER": {
+			controller = new MotionSensingController();
+		}
+		case "STANDARD_CONTROLLER": {
+			controller = new StandardController();
+		}
+		default: {
+			controller = null;
+		}
+			return controller;
+		}
+	}
+
+}

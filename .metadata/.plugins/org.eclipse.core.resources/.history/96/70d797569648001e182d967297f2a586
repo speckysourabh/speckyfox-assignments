@@ -1,0 +1,24 @@
+package com.sfx.factory;
+
+import com.sfx.component.controller.Controller;
+import com.sfx.component.display.Display;
+import com.sfx.component.processor.Processor;
+
+public class BeginnerBundleFactory implements GamingConsoleBundleFactory {
+
+	@Override
+	public Processor createProcessor() {
+		return new ProcessorFactory().getProcessor("BASIC");
+	}
+
+	@Override
+	public Display createDisplay() {
+		return new DisplayFactory().getDisplay("HD");
+	}
+
+	@Override
+	public Controller createController() {
+		return new ControllerFactory().getController("STANDARD");
+	}
+	
+}

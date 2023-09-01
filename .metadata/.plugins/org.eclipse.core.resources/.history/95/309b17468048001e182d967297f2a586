@@ -1,0 +1,11 @@
+package com.sfx.component;
+
+public class BasicProcessor implements Processor {
+
+	@Override
+	public void processorType() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

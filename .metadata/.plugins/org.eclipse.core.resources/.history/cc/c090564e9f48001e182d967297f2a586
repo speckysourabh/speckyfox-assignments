@@ -1,0 +1,23 @@
+package com.sfx.factory;
+
+import java.util.List;
+
+public class GamingConsoleBundlesSingleton {
+	
+	private static GamingConsoleBundlesSingleton bundlesSingleton;
+	private static List<GamingConsoleBundle> bundles;
+	
+	private GamingConsoleBundlesSingleton() {}
+
+	public List<GamingConsoleBundle> getGamingConsoleBundles() {
+		bundles = List.of(new AverageGamerBundle(), new BeginnerBundle(), new ProGamerBundle());
+	}
+	
+	public static GamingConsoleBundlesSingleton getInstance() {
+		if(bundlesSingleton==null) {
+			bundlesSingleton = new GamingConsoleBundlesSingleton();
+		}
+		return 
+	}
+	
+}

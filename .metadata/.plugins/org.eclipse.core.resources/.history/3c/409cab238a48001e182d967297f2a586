@@ -1,0 +1,29 @@
+package com.sfx.codmponent.display;
+
+import com.sfx.component.controller.Controller;
+import com.sfx.component.controller.MotionSensingController;
+import com.sfx.component.controller.ProController;
+import com.sfx.component.controller.StandardController;
+
+public class DisplayFactory {
+
+	public Display getDisplay(String displayType) {
+		Display display;
+		switch (displayType.toUpperCase()) {
+		case "PRO_CONTROLLER": {
+			display = new DisplayHD();
+		}
+		case "MOTION_SENSING_CONTROLLER": {
+			display = new Display4k();
+		}
+		case "STANDARD_CONTROLLER": {
+			display = new Display8kVR();
+		}
+		default: {
+			display = null;
+		}
+			return display;
+		}
+	}
+	
+}

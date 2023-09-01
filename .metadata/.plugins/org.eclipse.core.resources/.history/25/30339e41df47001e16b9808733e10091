@@ -1,0 +1,11 @@
+package com.sfx.vehicle;
+
+import java.util.List;
+
+public class VehicleDb {
+
+	List<Vehicle> bikes = List.of(
+				new Bike("Hero Splendor Plus", "Make", 2022, 93000)
+			);
+	
+}

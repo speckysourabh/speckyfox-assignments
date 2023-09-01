@@ -1,0 +1,10 @@
+package com.sfx;
+
+public class Vehicle {
+	
+	private String model;
+	private String make;
+	private Integer year;
+	private Double price;
+	
+}

@@ -1,0 +1,11 @@
+package com.sfx.mp;
+
+public class OilChangeProcedure implements MaintanenceProcedure {
+
+	@Override
+	public void performProcedure() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

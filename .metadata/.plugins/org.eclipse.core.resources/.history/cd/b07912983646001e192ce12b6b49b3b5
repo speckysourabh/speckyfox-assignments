@@ -1,0 +1,22 @@
+package com.sfx.vehicle;
+
+public class VehicleFactory {
+	
+	public static Vehicle getVehicle(String vehicle) {
+		Vehicle obj;
+		switch(vehicle) {
+			"bike" : {
+				obj = new Bike();
+				break;
+			}
+			"truck" : {
+				obj = new Truck();
+				break;
+			}
+			default : {
+				
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,12 @@
+package com.sfx.sales;
+
+import com.sfx.pojo.Customer;
+import com.sfx.pojo.Vehicle;
+
+public class CustomerHandling {
+	private static final Logger LOGGER = LoggerFactory.getLogger(OilChangeProcedure.class);
+	
+	public void handleInquiry(Customer customer, Vehicle vehicle) {
+		LOGGER.info("Handling inquiry from " + customer.getName() + " about " + vehicle.getModel());
+	}
+}

@@ -1,0 +1,5 @@
+package com.sfx;
+
+public class Bike extends Vehicle {
+
+}

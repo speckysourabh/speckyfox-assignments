@@ -1,0 +1,10 @@
+package com.sfx.component;
+
+public class Display8kVR implements Display {
+
+	@Override
+	public void displayType() {
+		System.out.println("HD display");
+	}
+
+}

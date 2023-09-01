@@ -1,0 +1,12 @@
+package com.sfx.vehicle;
+
+import com.sfx.mp.MaintenanceProcedure;
+
+public class Truck extends Vehicle {
+
+	@Override
+	public int calculateMaintenancePrice(MaintenanceProcedure maintanenceProcedure) {
+		return maintanenceProcedure.procedureCharge();
+	}
+	
+}

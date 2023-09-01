@@ -1,0 +1,38 @@
+package com.sfx.factory;
+
+import java.util.List;
+
+import com.sfx.component.controller.Controller;
+import com.sfx.component.controller.MotionSensingController;
+import com.sfx.component.controller.ProController;
+import com.sfx.component.controller.StandardController;
+
+public class ControllerFactory {
+
+	public Controller getController(String controllerType) {
+		Controller controller;
+		switch (controllerType.toUpperCase()) {
+		case "PRO": {
+			controller = new ProController();
+			break;
+		}
+		case "MOTION_SENSING": {
+			controller = new MotionSensingController();
+			break;
+		}
+		case "STANDARD": {
+			controller = new StandardController();
+			break;
+		}
+		default: {
+			controller = null;
+		}
+		}
+		return controller;
+	}
+
+	public List<Controller> controllers() {
+		return List.of(new ProController(), new MotionSensingController(), new StandardController());
+	}
+
+}

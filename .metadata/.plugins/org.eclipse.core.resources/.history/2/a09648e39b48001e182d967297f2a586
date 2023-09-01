@@ -1,0 +1,11 @@
+package com.sfx.factory;
+
+import java.util.List;
+
+public class GamingConsoleBundlesPrototype {
+
+	public List<GamingConsoleBundle> getGamingConsoleBundles() {
+		
+	}
+	
+}

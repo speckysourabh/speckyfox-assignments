@@ -1,0 +1,27 @@
+package com.sfx.vehicle;
+
+import java.util.Optional;
+
+public class VehicleFactory {
+	
+	public static Vehicle getVehicle(String vehicle) {
+		Vehicle obj;
+		switch(vehicle) {
+		case "bike" : {
+				obj = new Bike();
+				break;
+		}
+		
+		case "truck" : {
+			obj = new Truck();
+			break;
+		}
+		
+		default : {
+			obj = Optional.empty();
+		}
+			
+		}
+	}
+	
+}

@@ -1,0 +1,13 @@
+package com.sfx.util;
+
+import java.util.List;
+
+public class CustomerUtil {
+	
+	private List<String> customerList = List.of("sourabh@gmail.com");
+	
+	public String checkCustomerType(String email) {
+		
+	}
+	
+}

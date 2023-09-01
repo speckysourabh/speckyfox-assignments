@@ -1,0 +1,15 @@
+package com.sfx.component.controller;
+
+public class ProController implements Controller {
+
+	@Override
+	public void controllerType() {
+		System.out.println("Pro Controller with advanced haptic feedback");
+	}
+
+	@Override
+	public void price() {
+		System.out.println(25000);
+	}
+	
+}

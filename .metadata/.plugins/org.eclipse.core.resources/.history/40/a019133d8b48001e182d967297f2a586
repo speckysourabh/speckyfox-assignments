@@ -1,0 +1,24 @@
+package com.sfx.component.processor;
+
+public class ProcessorFactory {
+
+	public Processor getProcessor(String processorType) {
+		Processor processor;
+		switch (processorType.toUpperCase()) {
+		case "HD": {
+			processor = new BasicProcessor();
+		}
+		case "4K": {
+			processor = new AdvancedProcessor();
+		}
+		case "8KVR": {
+			processor = new ProGamingProcessor();
+		}
+		default: {
+			processor = null;
+		}
+			return processor;
+		}
+	}
+	
+}

@@ -1,0 +1,7 @@
+package com.sfx.component.processor;
+
+public interface Processor {
+
+	void processorType();
+	
+}

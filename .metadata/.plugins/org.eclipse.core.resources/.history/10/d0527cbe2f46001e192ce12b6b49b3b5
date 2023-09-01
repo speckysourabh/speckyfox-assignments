@@ -1,0 +1,8 @@
+package com.sfx.sales;
+
+public class CustomerHandling {
+	public void handleInquiry(Customer customer, Vehicle vehicle) {
+		// Handle customer inquiry about the vehicle
+		System.out.println("Handling inquiry from " + customer.getName() + " about " + vehicle.getModel());
+	}
+}
