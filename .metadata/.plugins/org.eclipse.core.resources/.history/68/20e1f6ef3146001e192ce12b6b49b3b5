@@ -1,5 +1,0 @@
-package com.sfx.pojo;
-
-public class VipCustomer extends Customer {
-
-}

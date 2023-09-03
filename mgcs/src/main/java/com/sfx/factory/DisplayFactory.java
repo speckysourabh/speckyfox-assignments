@@ -8,11 +8,17 @@ import com.sfx.component.display.Display;
 import com.sfx.component.display.Display4k;
 import com.sfx.component.display.Display8kVR;
 import com.sfx.component.display.DisplayHD;
+import com.sfx.exception.CustomException;
 
 public class DisplayFactory {
 
 	public Display getDisplay(String displayType) {
 		Display display;
+		
+		if(displayType == null) {
+			throw new CustomException("You have chosen a wrong display type");
+		}
+		
 		switch (displayType.toUpperCase()) {
 		case "HD": {
 			display = new DisplayHD();
@@ -27,7 +33,7 @@ public class DisplayFactory {
 			break;
 		}
 		default: {
-			display = null;
+			throw new CustomException("Display not find");
 		}
 		}
 		return display;

@@ -1,7 +1,0 @@
-package com.sfx.component;
-
-public interface Controller {
-
-	void controllerType();
-	
-}

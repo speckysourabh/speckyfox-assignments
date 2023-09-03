@@ -1,7 +1,0 @@
-package com.sfx.component;
-
-public interface Processor {
-
-	void displayType();
-	
-}

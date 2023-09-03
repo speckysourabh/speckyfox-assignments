@@ -7,13 +7,13 @@ public class Bike extends Vehicle {
 	public Bike() {
 	}
 
-	public Bike(String model, String make, Integer year, Double price) {
-		super(model, make, year, price);
+	public Bike(String vehicleType, String model, String make, Integer year, Double price) {
+		super(vehicleType, model, make, year, price);
 	}
 
 	@Override
 	public int calculateMaintenancePrice(MaintenanceProcedure maintanenceProcedure) {
-		return maintanenceProcedure.procedureCharge();
+		return maintanenceProcedure.procedureCharge(this);
 	}
 
 }

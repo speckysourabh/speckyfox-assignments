@@ -8,10 +8,16 @@ import com.sfx.component.controller.Controller;
 import com.sfx.component.controller.MotionSensingController;
 import com.sfx.component.controller.ProController;
 import com.sfx.component.controller.StandardController;
+import com.sfx.exception.CustomException;
 
 public class ControllerFactory {
 
 	public Controller getController(String controllerType) {
+		
+		if(controllerType == null) {
+			throw new CustomException("You have chosen a wrong controller type");
+		}
+		
 		Controller controller;
 		switch (controllerType.toUpperCase()) {
 		case "PRO": {
@@ -27,7 +33,7 @@ public class ControllerFactory {
 			break;
 		}
 		default: {
-			controller = null;
+			throw new CustomException("Controller not find");
 		}
 		}
 		return controller;

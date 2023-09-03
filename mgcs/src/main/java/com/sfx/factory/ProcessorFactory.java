@@ -8,10 +8,16 @@ import com.sfx.component.processor.AdvancedProcessor;
 import com.sfx.component.processor.BasicProcessor;
 import com.sfx.component.processor.ProGamingProcessor;
 import com.sfx.component.processor.Processor;
+import com.sfx.exception.CustomException;
 
 public class ProcessorFactory {
 
 	public Processor getProcessor(String processorType) {
+		
+		if(processorType == null) {
+			throw new CustomException("You have chosen a wrong processor type");
+		}
+		
 		Processor processor;
 		switch (processorType.toUpperCase()) {
 		case "BASIC": {
@@ -27,12 +33,12 @@ public class ProcessorFactory {
 			break;
 		}
 		default: {
-			processor = null;
+			throw new CustomException("Processor not find");
 		}
 		}
 		return processor;
 	}
-	
+
 	public Map<Integer, String> processorMap() {
 		Map<Integer, String> map = new HashMap<Integer, String>();
 		map.put(1, "BASIC");

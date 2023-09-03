@@ -4,21 +4,30 @@ import com.sfx.mp.MaintenanceProcedure;
 
 public abstract class Vehicle {
 
+	private String vehicleType;
 	private String model;
 	private String make;
 	private Integer year;
 	private Double price;
-
+	
 	public Vehicle() {
-		super();
 	}
 
-	public Vehicle(String model, String make, Integer year, Double price) {
+	public Vehicle(String vehicleType, String model, String make, Integer year, Double price) {
 		super();
+		this.vehicleType = vehicleType;
 		this.model = model;
 		this.make = make;
 		this.year = year;
 		this.price = price;
+	}
+
+	public String getVehicleType() {
+		return vehicleType;
+	}
+
+	public void setVehicleType(String vehicleType) {
+		this.vehicleType = vehicleType;
 	}
 
 	public String getModel() {
@@ -53,11 +62,12 @@ public abstract class Vehicle {
 		this.price = price;
 	}
 
-	public abstract int calculateMaintenancePrice(MaintenanceProcedure maintanenceProcedure);
-
 	@Override
 	public String toString() {
-		return "Vehicle [model=" + model + ", make=" + make + ", year=" + year + ", price=" + price + "]";
+		return "Vehicle [vehicleType=" + vehicleType + ", model=" + model + ", make=" + make + ", year=" + year
+				+ ", price=" + price + "]";
 	}
+
+	public abstract int calculateMaintenancePrice(MaintenanceProcedure maintanenceProcedure);
 
 }

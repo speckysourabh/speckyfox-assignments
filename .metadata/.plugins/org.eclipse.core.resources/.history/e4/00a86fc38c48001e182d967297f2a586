@@ -1,7 +1,0 @@
-package com.sfx.factory;
-
-public interface ConsoleGamingFactory {
-	
-	
-
-}

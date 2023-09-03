@@ -1,5 +1,0 @@
-package com.sfx.component.display;
-
-public class DisplayFactory {
-
-}

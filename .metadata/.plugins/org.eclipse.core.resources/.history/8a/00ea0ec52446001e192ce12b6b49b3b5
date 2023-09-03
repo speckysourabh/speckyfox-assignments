@@ -1,5 +1,0 @@
-package com.sfx;
-
-public class Truck extends Vehicle {
-
-}

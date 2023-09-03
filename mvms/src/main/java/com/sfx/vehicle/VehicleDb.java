@@ -5,11 +5,11 @@ import java.util.List;
 
 public interface VehicleDb {
 
-	public static List<Vehicle> bikes = List.of(new Bike("Hero Splendor Plus", "Make", 2022, 93000.0));
+	public static List<Vehicle> bikes = List.of(new Bike("bike", "Hero Splendor Plus", "Make", 2022, 93000.0));
 
-	public static List<Vehicle> cars = List.of(new Car("Maruti Suzuki Dzire", "Make", 2023, 651000.0));
+	public static List<Vehicle> cars = List.of(new Car("car", "Maruti Suzuki Dzire", "Make", 2023, 651000.0));
 
-	public static List<Vehicle> trucks = List.of(new Truck("Eicher Pro", "Make", 2022, 3055000.0));
+	public static List<Vehicle> trucks = List.of(new Truck("truck", "Eicher Pro", "Make", 2022, 3055000.0));
 	
 	public static List<Vehicle> getAll(String type) {
 		ArrayList<Vehicle> list = new ArrayList<Vehicle>();

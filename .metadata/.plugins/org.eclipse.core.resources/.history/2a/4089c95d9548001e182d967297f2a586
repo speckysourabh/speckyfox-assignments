@@ -1,5 +1,0 @@
-package com.sfx.factory;
-
-public interface ComponentFactory {
-	
-}

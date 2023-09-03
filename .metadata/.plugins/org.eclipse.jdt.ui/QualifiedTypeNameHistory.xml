@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.sfx.vehicle.VehicleDb"/>
     <fullyQualifiedTypeName name="com.sfx.vehicle.VehicleFactory"/>
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
@@ -22,13 +21,10 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.sfx.factory.GamingConsoleBundle"/>
     <fullyQualifiedTypeName name="com.sfx.factory.BeginnerBundleFactory"/>
-    <fullyQualifiedTypeName name="com.sfx.factory.GamingConsoleBundlesSingleton"/>
     <fullyQualifiedTypeName name="com.sfx.factory.AverageGamerBundle"/>
     <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
-    <fullyQualifiedTypeName name="com.sfx.pojo.GamingConsole"/>
     <fullyQualifiedTypeName name="com.sfx.factory.ProGamerBundle"/>
     <fullyQualifiedTypeName name="com.sfx.component.processor.Processor"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.sfx.component.controller.Controller"/>
     <fullyQualifiedTypeName name="com.sfx.factory.DisplayFactory"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
@@ -37,4 +33,20 @@
     <fullyQualifiedTypeName name="com.sfx.factory.ProcessorFactory"/>
     <fullyQualifiedTypeName name="com.sfx.factory.ControllerFactory"/>
     <fullyQualifiedTypeName name="com.sfx.builder.GamingConsoleBuilder"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="com.sfx.enums.BeginnerBundleENUM"/>
+    <fullyQualifiedTypeName name="com.sfx.abtractFactory.BeginnerBundle"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.sfx.abtractFactory.ProGamerBundle"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.sfx.abtractFactory.BeginnerBundleFactory"/>
+    <fullyQualifiedTypeName name="com.sfx.enums.BundleENUM"/>
+    <fullyQualifiedTypeName name="com.sfx.abtractFactory.AverageGamerBundle"/>
+    <fullyQualifiedTypeName name="com.sfx.abtractFactory.AverageBundleFactory"/>
+    <fullyQualifiedTypeName name="com.sfx.abtractFactory.ProGamerBundleFactory"/>
+    <fullyQualifiedTypeName name="com.sfx.pojo.GamingConsole"/>
+    <fullyQualifiedTypeName name="com.sfx.factory.GamingConsoleBundlesSingleton"/>
+    <fullyQualifiedTypeName name="com.sfx.vehicle.Vehicle"/>
+    <fullyQualifiedTypeName name="com.sfx.exception.CustomException"/>
+    <fullyQualifiedTypeName name="com.sfx.mp.ProcedureChargeCalculator"/>
 </qualifiedTypeNameHistroy>

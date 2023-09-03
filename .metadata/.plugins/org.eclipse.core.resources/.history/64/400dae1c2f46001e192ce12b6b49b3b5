@@ -1,7 +1,0 @@
-package com.sfx.pojo;
-
-public class Customer {
-	private String name;
-	private Long mobNumber;
-	private String email;
-}

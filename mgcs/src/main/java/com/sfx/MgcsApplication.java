@@ -14,8 +14,7 @@ import com.sfx.component.display.Display;
 import com.sfx.component.processor.Processor;
 import com.sfx.factory.ControllerFactory;
 import com.sfx.factory.DisplayFactory;
-import com.sfx.factory.GamingConsoleBundle;
-import com.sfx.factory.GamingConsoleBundlesSingleton;
+import com.sfx.factory.GamingConsoleSingleton;
 import com.sfx.factory.ProcessorFactory;
 import com.sfx.pojo.GamingConsole;
 
@@ -39,12 +38,11 @@ public class MgcsApplication implements CommandLineRunner {
 		switch (scanner.nextInt()) {
 		case 1: {
 			System.out.println("Choose an gaming console bundles from below options :");
-			List<GamingConsoleBundle> gamingConsoleBundles = GamingConsoleBundlesSingleton.getInstance()
-					.getGamingConsoleBundles();
-			IntStream.range(0, gamingConsoleBundles.size()).forEach(
-					e -> System.out.println(e + 1 + ". " + gamingConsoleBundles.get(e).getInstance().showComponent()));
+			List<GamingConsole> gamingConsoles = GamingConsoleSingleton.getInstance().getGamingConsoleBundles();
+			IntStream.range(0, gamingConsoles.size()).forEach(
+					e -> System.out.println(e + 1 + ". " + gamingConsoles.get(e).showComponent()));
 			int bundleChoice = scanner.nextInt() - 1;
-			purchasedBunde(gamingConsoleBundles.get(bundleChoice).getInstance());
+			purchasedBunde(gamingConsoles.get(bundleChoice));
 			break;
 		}
 		case 2: {
@@ -66,6 +64,9 @@ public class MgcsApplication implements CommandLineRunner {
 	}
 
 	public void createCustomConsole() {
+		
+		GamingConsoleBuilder consoleBuilder = GamingConsoleBuilder.builder();
+		
 		DisplayFactory displayFactory = new DisplayFactory();
 		System.out.println("Choose a display :");
 		List<Display> displays = displayFactory.displays();
@@ -73,6 +74,8 @@ public class MgcsApplication implements CommandLineRunner {
 				.forEach(e -> System.out.println(e + 1 + ". " + displays.get(e).displayType()));
 		int displayChoice = scanner.nextInt();
 		String display = displayFactory.displayMap().get(displayChoice);
+		
+		consoleBuilder.display(display);
 
 		ProcessorFactory processorFactory = new ProcessorFactory();
 		System.out.println("Choose a processor :");
@@ -81,6 +84,8 @@ public class MgcsApplication implements CommandLineRunner {
 				.forEach(e -> System.out.println(e + 1 + ". " + processors.get(e).processorType()));
 		int processorChoice = scanner.nextInt();
 		String processor = processorFactory.processorMap().get(processorChoice);
+		
+		consoleBuilder.processor(processor);
 
 		ControllerFactory controllerFactory = new ControllerFactory();
 		System.out.println("Choose a controller :");
@@ -89,10 +94,10 @@ public class MgcsApplication implements CommandLineRunner {
 				.forEach(e -> System.out.println(e + 1 + ". " + controllers.get(e).controllerType()));
 		int controllerChoice = scanner.nextInt();
 		String controller = controllerFactory.controllerMap().get(controllerChoice);
+		
+		consoleBuilder.controller(controller);
 
-		GamingConsole gamingConsole = GamingConsoleBuilder.builder().display(display).controller(controller)
-				.processor(processor).build();
-		purchasedBunde(gamingConsole);
+		purchasedBunde(consoleBuilder.build());
 	}
 
 }

@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import com.sfx.vehicle.Vehicle;
 
 public class EngineCleanProcudure implements MaintenanceProcedure {
-	
+
 	private static final Logger LOGGER = LoggerFactory.getLogger(EngineCleanProcudure.class);
 
 	@Override
@@ -15,8 +15,9 @@ public class EngineCleanProcudure implements MaintenanceProcedure {
 	}
 
 	@Override
-	public int procedureCharge() {
-		return 2000;
+	public int procedureCharge(Vehicle vehicle) {
+		ProcedureChargeCalculator calculator = new ProcedureChargeCalculator(vehicle);
+		return calculator.calculate(2000);
 	}
-	
+
 }

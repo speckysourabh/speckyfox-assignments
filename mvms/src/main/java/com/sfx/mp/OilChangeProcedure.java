@@ -15,8 +15,9 @@ public class OilChangeProcedure implements MaintenanceProcedure {
 	}
 
 	@Override
-	public int procedureCharge() {
-		return 1000;
+	public int procedureCharge(Vehicle vehicle) {
+		ProcedureChargeCalculator calculator = new ProcedureChargeCalculator(vehicle);
+		return calculator.calculate(2000);
 	}
 
 }

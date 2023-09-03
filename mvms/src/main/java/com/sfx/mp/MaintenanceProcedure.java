@@ -4,5 +4,5 @@ import com.sfx.vehicle.Vehicle;
 
 public interface MaintenanceProcedure {
 	void performProcedure(Vehicle vehicle);
-	int procedureCharge();
+	int procedureCharge(Vehicle vehicle);
 }

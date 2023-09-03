@@ -80,7 +80,7 @@ public class MvmsApplication implements CommandLineRunner {
 		MaintenanceProcedure maintanenceProcedure = MaintenanceProcedureFactory.getMaintanenceProcedure(mp)
 				.orElseThrow(() -> new Exception("No procedure found"));
 
-		LOGGER.info("{}", vehicle.calculateMaintenancePrice(maintanenceProcedure));
+		LOGGER.info("Your maintenance charge is {}", vehicle.calculateMaintenancePrice(maintanenceProcedure));
 	}
 
 	private Vehicle createVehicle() throws Exception {
@@ -100,6 +100,7 @@ public class MvmsApplication implements CommandLineRunner {
 		vehicle.setModel(vehicleModel);
 		vehicle.setPrice(vehiclePrice);
 		vehicle.setYear(vehicleYear);
+		vehicle.setVehicleType(vehicleType);
 		return vehicle;
 	}
 
