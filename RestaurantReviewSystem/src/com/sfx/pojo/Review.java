@@ -4,17 +4,17 @@ import java.time.LocalDate;
 
 public class Review {
 	private Long id;
-	private Long userId;
-	private Long restaurantId;
+	private User user;
+	private Restaurant restaurant;
 	private Integer rating;
 	private String comment;
 	private LocalDate date;
 
-	public Review(Long id, Long userId, Long restaurantId, Integer rating, String comment, LocalDate date) {
+	public Review(Long id, User user, Restaurant restaurant, Integer rating, String comment, LocalDate date) {
 		super();
 		this.id = id;
-		this.userId = userId;
-		this.restaurantId = restaurantId;
+		this.user = user;
+		this.restaurant = restaurant;
 		this.rating = rating;
 		this.comment = comment;
 		this.date = date;
@@ -28,20 +28,20 @@ public class Review {
 		this.id = id;
 	}
 
-	public Long getUserId() {
-		return userId;
+	public User getUser() {
+		return user;
 	}
 
-	public void setUserId(Long userId) {
-		this.userId = userId;
+	public void setUser(User user) {
+		this.user = user;
 	}
 
-	public Long getRestaurantId() {
-		return restaurantId;
+	public Restaurant getRestaurant() {
+		return restaurant;
 	}
 
-	public void setRestaurantId(Long restaurantId) {
-		this.restaurantId = restaurantId;
+	public void setRestaurant(Restaurant restaurant) {
+		this.restaurant = restaurant;
 	}
 
 	public Integer getRating() {
@@ -70,8 +70,7 @@ public class Review {
 
 	@Override
 	public String toString() {
-		return "Review [id=" + id + ", userId=" + userId + ", restaurantId=" + restaurantId + ", rating=" + rating
+		return "Review [id=" + id + ", user=" + user + ", restaurant=" + restaurant + ", rating=" + rating
 				+ ", comment=" + comment + ", date=" + date + "]";
 	}
-
 }
