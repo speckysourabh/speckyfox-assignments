@@ -1,9 +1,12 @@
 package com.sfx;
 
+import java.time.Month;
 import java.util.Scanner;
 
 import com.sfx.operations.Analytics;
 import com.sfx.operations.ReviewFiltering;
+import com.sfx.operations.Search;
+import com.sfx.operations.Sorting;
 
 public class RestaurantReviewSystem {
 	private static Scanner scanner = new Scanner(System.in);
@@ -27,7 +30,102 @@ public class RestaurantReviewSystem {
 			analytics();
 			break;
 		}
+		case 3: {
+			search();
+			break;
 		}
+		case 4: {
+			sort();
+			break;
+		}
+		default: {
+
+		}
+		}
+	}
+
+	private static void sort() {
+		Sorting sorting = new Sorting();
+		System.out.println("Choose an option !");
+		System.out.println("1. Display reviews ( older to newer )");
+		System.out.println("2. Display reviews ( newer to older )");
+		System.out.println("3. Display restaurants in order of average rating.");
+
+		int choice = scanner.nextInt();
+
+		switch (choice) {
+		case 1: {
+			sorting.sortReviewByDateAsc().stream().forEach(System.out::println);
+			break;
+		}
+		case 2: {
+			sorting.sortReviewByDateDesc().stream().forEach(System.out::println);
+			break;
+		}
+		case 3: {
+			sorting.displayRestaurantByAverageRating().entrySet().stream().forEach(System.out::println);;
+			break;
+		}
+		default: {
+			throw new RuntimeException("Wrong choice");
+		}
+
+		}
+
+	}
+
+	private static void search() {
+		Search search = new Search();
+		System.out.println("Choose an option !");
+		System.out.println("1. Find all restaurants that match a given name or part of a name.");
+		System.out.println("2. Find all reviews made in a particular month.");
+		System.out.println("3. Find all reviews made in a particular year.");
+
+		int choice = scanner.nextInt();
+
+		switch (choice) {
+		case 1: {
+			System.out.println("Type something to search restaurant !");
+			String keyword = scanner.next();
+			search.findRestaurantsByKeyword(keyword).stream().forEach(System.out::println);
+			break;
+		}
+		case 2: {
+			System.out.println("Enter month number between 1-12");
+			Month desiredMonth = getMonthByNumber(scanner.nextInt());
+			search.findReviewsOfMonth(desiredMonth).stream().forEach(System.out::println);
+			break;
+		}
+		case 3: {
+			System.out.println("Enter year");
+			int desiredYear = scanner.nextInt();
+			search.findReviewsOfYear(desiredYear).stream().forEach(System.out::println);
+			break;
+		}
+		default: {
+			throw new RuntimeException("Wrong choice");
+		}
+
+		}
+
+	}
+
+	public static Month getMonthByNumber(int num) {
+		return switch (num) {
+		case 1 -> Month.JANUARY;
+		case 2 -> Month.FEBRUARY;
+		case 3 -> Month.MARCH;
+		case 4 -> Month.APRIL;
+		case 5 -> Month.MAY;
+		case 6 -> Month.JUNE;
+		case 7 -> Month.JULY;
+		case 8 -> Month.AUGUST;
+		case 9 -> Month.SEPTEMBER;
+		case 10 -> Month.OCTOBER;
+		case 11 -> Month.NOVEMBER;
+		case 12 -> Month.DECEMBER;
+		default -> throw new IllegalArgumentException("Invalid month number: " + num);
+		};
 	}
 
 	public static void analytics() {

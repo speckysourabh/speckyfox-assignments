@@ -8,7 +8,6 @@ import java.util.stream.Collectors;
 
 import com.sfx.db.Storage;
 import com.sfx.pojo.Restaurant;
-import com.sfx.pojo.Review;
 import com.sfx.pojo.User;
 
 public class Analytics {

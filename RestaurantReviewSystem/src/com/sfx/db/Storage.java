@@ -18,8 +18,6 @@ public class Storage {
 
 	private Storage() {
 
-		List<Restaurant> restaurants = new ArrayList<>();
-
 		Restaurant restaurant1 = new Restaurant(1L, "Restaurant A", "City A", "Italian");
 		Restaurant restaurant2 = new Restaurant(2L, "Restaurant B", "City B", "Mexican");
 		Restaurant restaurant3 = new Restaurant(3L, "Restaurant C", "City C", "Japanese");
@@ -41,8 +39,6 @@ public class Storage {
 		restaurants.add(restaurant8);
 		restaurants.add(restaurant9);
 		restaurants.add(restaurant10);
-
-		List<User> users = new ArrayList<>();
 
 		User user1 = new User(1L, "Alice", LocalDate.of(2020, 5, 15));
 		User user2 = new User(2L, "Bob", LocalDate.of(2019, 9, 28));
