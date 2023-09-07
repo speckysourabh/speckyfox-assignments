@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.sfx.component.display.Display8kVR"/>
-    <fullyQualifiedTypeName name="com.sfx.component.processor.BasicProcessor"/>
-    <fullyQualifiedTypeName name="com.sfx.component.processor.AdvancedProcessor"/>
-    <fullyQualifiedTypeName name="com.sfx.component.processor.ProGamingProcessor"/>
-    <fullyQualifiedTypeName name="com.sfx.factory.ConsoleGamingFactory"/>
     <fullyQualifiedTypeName name="com.sfx.factory.BeginnerBundle"/>
     <fullyQualifiedTypeName name="com.sfx.enums.DisplayEnum"/>
     <fullyQualifiedTypeName name="com.sfx.factory.GamingConsoleBundle"/>
@@ -35,12 +30,9 @@
     <fullyQualifiedTypeName name="com.sfx.vehicle.Vehicle"/>
     <fullyQualifiedTypeName name="com.sfx.exception.CustomException"/>
     <fullyQualifiedTypeName name="com.sfx.mp.ProcedureChargeCalculator"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="com.sfx.RestaurantReviewSystem"/>
-    <fullyQualifiedTypeName name="com.sfx.pojo.Review"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.sfx.filtering.ReviewFiltering"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.security.KeyStore.Entry"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
@@ -51,13 +43,21 @@
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.sfx.config.AppConfig"/>
     <fullyQualifiedTypeName name="org.springframework.core.env.Environment"/>
-    <fullyQualifiedTypeName name="com.sfx.db.Storage"/>
-    <fullyQualifiedTypeName name="com.sfx.operations.Analytics"/>
-    <fullyQualifiedTypeName name="java.util.Comparator"/>
-    <fullyQualifiedTypeName name="com.sfx.pojo.Restaurant"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="com.sfx.pojo.User"/>
     <fullyQualifiedTypeName name="org.springframework.boot.SpringApplicationRunListener"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="com.sfx.operations.Sorting"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.sfx.pojo.Review"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.Year"/>
+    <fullyQualifiedTypeName name="java.time.Month"/>
+    <fullyQualifiedTypeName name="com.sfx.operations.Search"/>
+    <fullyQualifiedTypeName name="com.sfx.pojo.Restaurant"/>
+    <fullyQualifiedTypeName name="java.util.TreeMap"/>
+    <fullyQualifiedTypeName name="com.sfx.db.Storage"/>
+    <fullyQualifiedTypeName name="com.sfx.operations.Analytics"/>
 </qualifiedTypeNameHistroy>

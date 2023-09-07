@@ -86,7 +86,8 @@ public class RestaurantReviewSystem {
 		switch (choice) {
 		case 1: {
 			System.out.println("Type something to search restaurant !");
-			String keyword = scanner.next();
+			scanner.nextLine();
+			String keyword = scanner.nextLine();
 			search.findRestaurantsByKeyword(keyword).stream().forEach(System.out::println);
 			break;
 		}
@@ -142,18 +143,18 @@ public class RestaurantReviewSystem {
 
 		switch (choice) {
 		case 1: {
-			System.out.print("Enter restaurant id: ");
+			System.out.println("Enter restaurant id: ");
 			System.out.println("Average rating is : " + analytics.averageRatingOfRestaurant(scanner.nextLong()));
 			break;
 		}
 		case 2: {
-			System.out.print("Below are the top 5 most reviewed restaurants : ");
+			System.out.println("Below are the top 5 most reviewed restaurants : ");
 			analytics.topFiveMostReviewedRestaurants().stream().forEach(System.out::println);
 			;
 			break;
 		}
 		case 3: {
-			System.out.print("Below are the top 5 highest rated restaurants : ");
+			System.out.println("Below are the top 5 highest rated restaurants : ");
 			analytics.topFiveHighestRatedRestaurants().stream().forEach(System.out::println);
 			;
 			break;

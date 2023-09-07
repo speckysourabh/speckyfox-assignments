@@ -6,8 +6,14 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="user4"/>
+		<item key="selection" value="restaurant9"/>
 		<list key="findhistory">
+			<item value="restaurant9"/>
+			<item value="user5"/>
+			<item value="restaurant5"/>
+			<item value="restaurant3"/>
+			<item value="restaurant10"/>
+			<item value="restaurant2"/>
 			<item value="user4"/>
 			<item value="restaurant6"/>
 			<item value="@Override"/>

@@ -39,7 +39,7 @@ public class Analytics {
 		Map<User, Long> userMap = Storage.getInstance().getReviews().stream()
 				.collect(Collectors.groupingBy(e -> e.getUser(), Collectors.counting()));
 		List<Entry<User, Long>> reviews = userMap.entrySet().stream()
-				.sorted(Comparator.comparing(Map.Entry<User, Long>::getValue).reversed()).limit(1).toList();
+				.sorted(Comparator.comparing(Map.Entry<User, Long>::getValue).reversed()).limit(3).toList();
 		return reviews.stream().map(e -> e.getKey()).toList();
 	}
 
