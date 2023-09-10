@@ -1,9 +1,11 @@
 package com.sfx.component.display;
 
+import com.sfx.component.Display;
+
 public class DisplayHD implements Display {
 	
 	@Override
-	public String displayType() {
+	public String componentType() {
 		return "HD display";
 	}
 

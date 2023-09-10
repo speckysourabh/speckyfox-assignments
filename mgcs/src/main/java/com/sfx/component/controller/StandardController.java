@@ -1,9 +1,11 @@
 package com.sfx.component.controller;
 
+import com.sfx.component.Controller;
+
 public class StandardController implements Controller {
 
 	@Override
-	public String controllerType() {
+	public String componentType() {
 		return "Standard Controller";
 	}
 	

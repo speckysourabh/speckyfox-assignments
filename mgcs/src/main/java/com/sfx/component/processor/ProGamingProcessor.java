@@ -1,9 +1,11 @@
 package com.sfx.component.processor;
 
+import com.sfx.component.Processor;
+
 public class ProGamingProcessor implements Processor {
 	
 	@Override
-	public String processorType() {
+	public String componentType() {
 		return "Pro Gaming Processor";
 	}
 

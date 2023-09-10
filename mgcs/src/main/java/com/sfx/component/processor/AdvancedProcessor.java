@@ -1,9 +1,11 @@
 package com.sfx.component.processor;
 
+import com.sfx.component.Processor;
+
 public class AdvancedProcessor implements Processor {
 
 	@Override
-	public String processorType() {
+	public String componentType() {
 		return "Advanced Processor";
 	}
 

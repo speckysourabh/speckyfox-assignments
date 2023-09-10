@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.sfx.component.display.Display;
+import com.sfx.component.Display;
 import com.sfx.component.display.Display4k;
 import com.sfx.component.display.Display8kVR;
 import com.sfx.component.display.DisplayHD;

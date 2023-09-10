@@ -3,25 +3,25 @@ package com.sfx.factory;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.sfx.abtractFactory.AverageBundleFactory;
-import com.sfx.abtractFactory.BeginnerBundleFactory;
-import com.sfx.abtractFactory.ProGamerBundleFactory;
-import com.sfx.pojo.GamingConsole;
+import com.sfx.bundles.AverageBundleFactory;
+import com.sfx.bundles.BeginnerBundleFactory;
+import com.sfx.bundles.GamingConsoleBundle;
+import com.sfx.bundles.ProGamerBundleFactory;
 
 public class GamingConsoleSingleton {
 	
 	private static GamingConsoleSingleton bundlesSingleton;
-	private static List<GamingConsole> bundles;
+	private static List<GamingConsoleBundle> bundles;
 	
 	private GamingConsoleSingleton() {
 		
-		bundles = new ArrayList<GamingConsole>();
+		bundles = new ArrayList<GamingConsoleBundle>();
 		bundles.addAll(BeginnerBundleFactory.getBundle());
 		bundles.addAll(AverageBundleFactory.getBundle());
 		bundles.addAll(ProGamerBundleFactory.getBundle());
 	}
 
-	public List<GamingConsole> getGamingConsoleBundles() {
+	public List<GamingConsoleBundle> getGamingConsoleBundles() {
 		return bundles;
 	}
 	

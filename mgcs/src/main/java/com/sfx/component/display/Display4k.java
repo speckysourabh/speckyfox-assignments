@@ -1,9 +1,11 @@
 package com.sfx.component.display;
 
+import com.sfx.component.Display;
+
 public class Display4k implements Display {
 
 	@Override
-	public String displayType() {
+	public String componentType() {
 		return "4k display";
 	}
 

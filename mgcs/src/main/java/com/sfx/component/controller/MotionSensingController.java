@@ -1,15 +1,17 @@
 package com.sfx.component.controller;
 
+import com.sfx.component.Controller;
+
 public class MotionSensingController implements Controller {
 
 	@Override
-	public String controllerType() {
-		return "Motion Sensing Controller";
+	public int price() {
+		return 15000;
 	}
 
 	@Override
-	public int price() {
-		return 1500;
+	public String componentType() {
+		return "Motion Sensing Controller";
 	}
 
 }

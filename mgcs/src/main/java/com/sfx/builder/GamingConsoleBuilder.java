@@ -1,8 +1,8 @@
 package com.sfx.builder;
 
-import com.sfx.component.controller.Controller;
-import com.sfx.component.display.Display;
-import com.sfx.component.processor.Processor;
+import com.sfx.component.Controller;
+import com.sfx.component.Display;
+import com.sfx.component.Processor;
 import com.sfx.factory.ControllerFactory;
 import com.sfx.factory.DisplayFactory;
 import com.sfx.factory.ProcessorFactory;

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.sfx.component.controller.Controller;
+import com.sfx.component.Controller;
 import com.sfx.component.controller.MotionSensingController;
 import com.sfx.component.controller.ProController;
 import com.sfx.component.controller.StandardController;

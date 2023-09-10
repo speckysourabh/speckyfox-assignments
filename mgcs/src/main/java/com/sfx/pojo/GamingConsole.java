@@ -1,8 +1,8 @@
 package com.sfx.pojo;
 
-import com.sfx.component.controller.Controller;
-import com.sfx.component.display.Display;
-import com.sfx.component.processor.Processor;
+import com.sfx.component.Controller;
+import com.sfx.component.Display;
+import com.sfx.component.Processor;
 
 public class GamingConsole {
 
@@ -39,7 +39,7 @@ public class GamingConsole {
 	}
 	
 	public String showComponent() {
-		return "[ Processor: "+processor.processorType()+", Controller: "+controller.controllerType()+", Display: "+display.displayType()+" ]";
+		return "[ Processor: "+processor.componentType()+", Controller: "+controller.componentType()+", Display: "+display.componentType()+" ]";
 	}
 	
 	public int showPrice() {

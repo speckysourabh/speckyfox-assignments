@@ -6,10 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="restaurant9"/>
+		<item key="selection" value="user5"/>
 		<list key="findhistory">
-			<item value="restaurant9"/>
 			<item value="user5"/>
+			<item value="restaurant9"/>
 			<item value="restaurant5"/>
 			<item value="restaurant3"/>
 			<item value="restaurant10"/>
