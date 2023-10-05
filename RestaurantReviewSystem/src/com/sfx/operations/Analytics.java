@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import com.sfx.db.Storage;
 import com.sfx.pojo.Restaurant;
 import com.sfx.pojo.User;
-
+	
 public class Analytics {
 
 	public double averageRatingOfRestaurant(Long restaurantId) {

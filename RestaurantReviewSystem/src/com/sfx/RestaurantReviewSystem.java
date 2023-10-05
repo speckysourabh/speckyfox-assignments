@@ -3,8 +3,8 @@ package com.sfx;
 import java.time.Month;
 import java.util.Scanner;
 
+import com.sfx.filter.ReviewFiltering;
 import com.sfx.operations.Analytics;
-import com.sfx.operations.ReviewFiltering;
 import com.sfx.operations.Search;
 import com.sfx.operations.Sorting;
 

@@ -47,7 +47,7 @@ public class MgcsApplication implements CommandLineRunner {
 			IntStream.range(0, gamingConsoles.size()).forEach(
 					e -> System.out.println(e + 1 + ". " + gamingConsoles.get(e).getBundle().getGamingConsole().showComponent()));
 			int bundleChoice = scanner.nextInt() - 1;
-			GamingConsoleBundle gamingConsole = gamingConsoles.get(bundleChoice);
+			GamingConsoleBundle gamingConsole = gamingConsoles.get(bundleChoice).getBundle();
 			purchasedBunde(gamingConsole.getBundle().getGamingConsole());
 			System.out.println("Do you want to upgrade ?");
 			System.out.println("1. Yes");
