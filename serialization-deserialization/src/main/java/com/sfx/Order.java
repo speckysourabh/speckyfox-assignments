@@ -1,6 +1,7 @@
 package com.sfx;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -12,16 +13,10 @@ public class Order implements Serializable {
 	@JsonIgnore
 	private Long id;
 	private Double amount;
+	private String orderDate;
 	private String description;
 
 	public Order() {
-	}
-
-	public Order(Long id, Double amount, String description) {
-		super();
-		this.id = id;
-		this.amount = amount;
-		this.description = description;
 	}
 
 	public Long getId() {
@@ -40,6 +35,14 @@ public class Order implements Serializable {
 		this.amount = amount;
 	}
 
+	public String getOrderDate() {
+		return orderDate;
+	}
+
+	public void setOrderDate(String orderDate) {
+		this.orderDate = orderDate;
+	}
+
 	public String getDescription() {
 		return description;
 	}
@@ -48,9 +51,17 @@ public class Order implements Serializable {
 		this.description = description;
 	}
 
+	public Order(Long id, Double amount, String orderDate, String description) {
+		super();
+		this.id = id;
+		this.amount = amount;
+		this.orderDate = orderDate;
+		this.description = description;
+	}
+
 	@Override
 	public int hashCode() {
-		return Objects.hash(amount, description);
+		return Objects.hash(amount, description, orderDate);
 	}
 
 	@Override
@@ -62,7 +73,10 @@ public class Order implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Order other = (Order) obj;
-		return Objects.equals(amount, other.amount) && Objects.equals(description, other.description);
+		return Objects.equals(amount, other.amount) && Objects.equals(description, other.description)
+				&& Objects.equals(orderDate, other.orderDate);
 	}
+
+	
 
 }

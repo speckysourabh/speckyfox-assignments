@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.LocalDate;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -27,12 +28,12 @@ public class OrderOperationsTest {
 
 	@BeforeEach
 	public void setup() throws IOException {
-		order = new Order(1L, 500.0, "Wireless mouse");
+		order = new Order(1L, 500.0, "2023-10-12", "Wireless mouse");
 		Path path = Paths.get("src/main/resources/order.json");
 		orderJSON = Files.readAllLines(path).get(0);
 		orderExclusionJSON = Files.readAllLines(path).get(1);
-		admin = new User(1l, "Danny", "admin");
-		user = new User(1l, "Ronny", "user");
+		admin = new User(1l, "Danny", "danny", "admin");
+		user = new User(1l, "Ronny", "ronny", "user");
 	}
 
 	@Test

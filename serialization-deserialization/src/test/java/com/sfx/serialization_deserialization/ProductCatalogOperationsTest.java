@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.LocalDate;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -29,11 +30,11 @@ public class ProductCatalogOperationsTest {
 	@BeforeEach
 	public void setup() throws IOException {
 		productCatalog = new ProductCatalog(1l, new Customer(1l, "Sourabh Gautam"),
-				new Order(1L, 500.0, "Wireless mouse"));
+				new Order(1L, 500.0, "2023-10-12", "Wireless mouse"));
 		Path path = Paths.get("src/main/resources/product-catalog.json");
 		productCatalogJSON = Files.readString(path).trim();
-		admin = new User(1l, "Danny", "admin");
-		user = new User(1l, "Ronny", "user");
+		admin = new User(1l, "Danny", "danny", "admin");
+		user = new User(1l, "Ronny", "ronny", "user");
 	}
 
 	@Test

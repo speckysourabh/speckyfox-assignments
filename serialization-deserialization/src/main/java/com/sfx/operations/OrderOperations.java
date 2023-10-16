@@ -25,6 +25,7 @@ public class OrderOperations {
 			throw new CustomException("Unauthorized access");
 		}
 		LOGGER.info("Converting order object to order JSON");
+		System.out.println(mapper.writeValueAsString(order));
 		return mapper.writeValueAsString(order);
 	}
 

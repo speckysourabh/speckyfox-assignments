@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.sfx.factory.BudgetStorageFactory"/>
-    <fullyQualifiedTypeName name="com.sfx.pojo.User"/>
-    <fullyQualifiedTypeName name="com.sfx.observers.BudgetObserver"/>
-    <fullyQualifiedTypeName name="com.sfx.observers.BudgetObserverable"/>
-    <fullyQualifiedTypeName name="com.sfx.observers.BudgetObservable"/>
-    <fullyQualifiedTypeName name="com.sfx.observers.GroceryBudgetObservable"/>
-    <fullyQualifiedTypeName name="com.sfx.observers.EntertainmentBudgetObservable"/>
     <fullyQualifiedTypeName name="com.sfx.observers.SimpleBudgetObserver"/>
     <fullyQualifiedTypeName name="com.sfx.factory.BudgetObserverableFactory"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.sfx.FinanceManagerApp"/>
     <fullyQualifiedTypeName name="com.sfx.transaction.GroceryTransaction"/>
     <fullyQualifiedTypeName name="com.sfx.transaction.Transaction"/>
@@ -23,8 +15,6 @@
     <fullyQualifiedTypeName name="com.sfx.enums.ExpenseCategoryEnum"/>
     <fullyQualifiedTypeName name="com.sfx.db.IncomeTransactionStorage"/>
     <fullyQualifiedTypeName name="com.sfx.enums.IncomeCategoryEnum"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.sfx.db.UserStorage"/>
     <fullyQualifiedTypeName name="com.sfx.exception.CustomException"/>
     <fullyQualifiedTypeName name="com.sfx.pojo.Goal"/>
@@ -32,4 +22,42 @@
     <fullyQualifiedTypeName name="com.sfx.db.GoalStorage"/>
     <fullyQualifiedTypeName name="com.sfx.utils.MyPrinter"/>
     <fullyQualifiedTypeName name="com.sfx.db.ExpenseTransactionStorage"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.runtime.ObjectMethods"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonInclude"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.sfx.Storage"/>
+    <fullyQualifiedTypeName name="com.sfx.App"/>
+    <fullyQualifiedTypeName name="com.sfx.Order"/>
+    <fullyQualifiedTypeName name="java.rmi.server.Operation"/>
+    <fullyQualifiedTypeName name="com.sfx.operations.Operations"/>
+    <fullyQualifiedTypeName name="java.nio.file.Path"/>
+    <fullyQualifiedTypeName name="java.nio.file.Paths"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
+    <fullyQualifiedTypeName name="java.util.Objects"/>
+    <fullyQualifiedTypeName name="org.apache.commons.lang3.ObjectUtils"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="com.sfx.Customer"/>
+    <fullyQualifiedTypeName name="com.sfx.ProductCatalog"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.core.Logger"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
+    <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+    <fullyQualifiedTypeName name="com.sfx.operations.OrderOperations"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
+    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
+    <fullyQualifiedTypeName name="com.sfx.User"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="com.sfx.CustomException"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="com.sft.utils.DbConnection"/>
 </qualifiedTypeNameHistroy>
