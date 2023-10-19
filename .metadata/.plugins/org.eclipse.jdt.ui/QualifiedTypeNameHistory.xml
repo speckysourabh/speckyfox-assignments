@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.sfx.observers.SimpleBudgetObserver"/>
-    <fullyQualifiedTypeName name="com.sfx.factory.BudgetObserverableFactory"/>
-    <fullyQualifiedTypeName name="com.sfx.FinanceManagerApp"/>
-    <fullyQualifiedTypeName name="com.sfx.transaction.GroceryTransaction"/>
-    <fullyQualifiedTypeName name="com.sfx.transaction.Transaction"/>
-    <fullyQualifiedTypeName name="com.sfx.transaction.BusinessTransaction"/>
-    <fullyQualifiedTypeName name="com.sfx.factory.BudgetObservableFactory"/>
-    <fullyQualifiedTypeName name="com.sfx.pojo.Budget"/>
     <fullyQualifiedTypeName name="com.sfx.transaction.EntertainmentTransaction"/>
     <fullyQualifiedTypeName name="com.sfx.db.EntertainmentBudgetStorage"/>
     <fullyQualifiedTypeName name="com.sfx.transaction.ExpenseTransaction"/>
@@ -25,7 +17,6 @@
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.runtime.ObjectMethods"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonInclude"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
@@ -57,7 +48,16 @@
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="com.sfx.CustomException"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="com.sft.utils.DbConnection"/>
+    <fullyQualifiedTypeName name="com.sft.utils.QueryMaker"/>
+    <fullyQualifiedTypeName name="com.sft.service.DataImportService"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="com.sft.service.DataExportService"/>
 </qualifiedTypeNameHistroy>
