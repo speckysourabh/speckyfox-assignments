@@ -5232,3 +5232,68 @@ Caused by: java.util.concurrent.CancellationException
 
 !ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-10-19 14:03:38.887
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-19 16:26:59.986
+!MESSAGE Classpath changed for project: Export-Import-Data
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-19 16:27:00.035
+!MESSAGE executing callback sts4.classpath.zfrJPlTW FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-10-19 16:27:00.036
+!MESSAGE No language server has registered to handle command 'sts4.classpath.zfrJPlTW'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.zfrJPlTW'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.lambda$1(LSP4ECommandExecutor.java:32)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:32)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-19 16:27:00.105
+!MESSAGE Classpath changed for project: Export-Import-Data
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-19 16:27:00.110
+!MESSAGE executing callback sts4.classpath.zfrJPlTW FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-10-19 16:27:00.111
+!MESSAGE No language server has registered to handle command 'sts4.classpath.zfrJPlTW'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.zfrJPlTW'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.lambda$1(LSP4ECommandExecutor.java:32)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:32)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-19 16:27:00.145
+!MESSAGE executing callback sts4.classpath.zfrJPlTW FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-10-19 16:27:00.146
+!MESSAGE No language server has registered to handle command 'sts4.classpath.zfrJPlTW'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.zfrJPlTW'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.lambda$1(LSP4ECommandExecutor.java:32)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:32)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-19 16:27:06.139
+!MESSAGE Classpath changed for project: Export-Import-Data
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-19 16:27:06.160
+!MESSAGE executing callback sts4.classpath.zfrJPlTW FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-10-19 16:27:06.161
+!MESSAGE No language server has registered to handle command 'sts4.classpath.zfrJPlTW'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.zfrJPlTW'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.lambda$1(LSP4ECommandExecutor.java:32)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:32)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
