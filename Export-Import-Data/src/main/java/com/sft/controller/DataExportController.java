@@ -71,7 +71,6 @@ public class DataExportController extends HttpServlet {
 			PDPage page = new PDPage(PDRectangle.A4);
 			document.addPage(page);
 
-			// Start a new content stream which will "hold" the to be created content
 			PDPageContentStream contentStream = new PDPageContentStream(document, page);
 			PDFont font = PDType1Font.HELVETICA_BOLD;
 			contentStream.setFont(font, 12);

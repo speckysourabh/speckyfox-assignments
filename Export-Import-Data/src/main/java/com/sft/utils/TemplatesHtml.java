@@ -11,7 +11,7 @@ public class TemplatesHtml {
 		StringBuilder builder = new StringBuilder();
 		builder.append("<html>");
 		builder.append("<head>");
-		builder.append("<style> table { border: 1px solid red } </style>");
+		builder.append("<style> table tr td { border: 1px solid red } </style>");
 		builder.append("</head>");
 		builder.append("<body>");
 		builder.append("<h1>Person Details</h1>");

@@ -6,14 +6,17 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Order"/>
+		<item key="selection" value="i"/>
 		<list key="findhistory">
+			<item value="i"/>
+			<item value="cellIterator.next()"/>
 			<item value="Order"/>
 			<item value="private"/>
 			<item value="budgetObserverable"/>
 			<item value="budgetObservable"/>
 		</list>
 		<list key="replacehistory">
+			<item value="cell"/>
 			<item value="ProductCatalog"/>
 			<item value="public"/>
 			<item value="budgetObservable"/>
