@@ -1,5 +1,7 @@
 package com.sft.entity;
 
+import java.time.LocalDate;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -15,5 +17,6 @@ public class TransactionEntity {
 	private String type;
 	private String category;
 	private double amount;
+	private LocalDate transactionDate = LocalDate.now();
 	private Long userId;
 }

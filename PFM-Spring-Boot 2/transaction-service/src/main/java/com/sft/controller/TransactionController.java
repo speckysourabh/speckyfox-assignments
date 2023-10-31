@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.sft.dto.TransactionFilterDTO;
 import com.sft.entity.TransactionEntity;
 import com.sft.service.TransactionService;
 
@@ -32,6 +33,12 @@ public class TransactionController {
 	public ResponseEntity<TransactionEntity> addTransaction(@RequestBody TransactionEntity transactionEntity) throws Exception {
 		TransactionEntity transaction = transactionService.addTransacction(transactionEntity);
 		return ResponseEntity.status(HttpStatus.CREATED).body(transaction);
+	}
+	
+	@PostMapping("/reports")
+	public ResponseEntity<List<TransactionEntity>> getTransactionsByDate(@RequestBody TransactionFilterDTO transactionFilterDTO) throws Exception {
+		List<TransactionEntity> transactions = transactionService.getTransactionByFilter(transactionFilterDTO);
+		return ResponseEntity.status(HttpStatus.CREATED).body(transactions);
 	}
 	
 }
