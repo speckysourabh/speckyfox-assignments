@@ -93,7 +93,7 @@ public class UserController {
 	@GetMapping("/transactions/{userId}")
 	public ResponseEntity<List<TransactionEntity>> getAllTransaction(@PathVariable Long userId) {
 		List<TransactionEntity> transaction = transactionService.getAllTransaction(userId);
-		return ResponseEntity.status(HttpStatus.CREATED).body(transaction);
+		return ResponseEntity.status(HttpStatus.OK).body(transaction);
 	}
 
 	@PostMapping("/budgets")
