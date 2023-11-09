@@ -3,6 +3,7 @@ package com.sft.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.sft.dto.UpdatePasswordDTO;
 import com.sft.dto.UserDTO;
+import com.sft.dto.UserLoginDTO;
 import com.sft.exception.CustomException;
 import com.sft.exception.UserNotFoundException;
 import com.sft.service.UserService;
@@ -21,6 +23,7 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @RequestMapping("${project.version}/users")
 @Slf4j
+@CrossOrigin("http://localhost:3000/")
 public class UserController {
 
 	@Autowired
@@ -33,8 +36,8 @@ public class UserController {
 	}
 
 	@PostMapping("/login")
-	public ResponseEntity<String> userLogin(@Valid @RequestBody UserDTO userDTO) throws UserNotFoundException {
-		return ResponseEntity.status(HttpStatus.ACCEPTED).body(userService.isUserAuthenticated(userDTO));
+	public ResponseEntity<String> userLogin(@Valid @RequestBody UserLoginDTO userLoginDTO) throws UserNotFoundException {
+		return ResponseEntity.status(HttpStatus.ACCEPTED).body(userService.isUserAuthenticated(userLoginDTO));
 	}
 
 	@PutMapping("/update-password")

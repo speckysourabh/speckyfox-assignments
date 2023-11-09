@@ -2,14 +2,16 @@ package com.sft.config;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import com.sft.entity.UserEntity;
 
 public class CustomUser implements UserDetails {
-	
+
 	private static final long serialVersionUID = 1L;
 	private UserEntity userEntity;
 
@@ -20,7 +22,7 @@ public class CustomUser implements UserDetails {
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		return Collections.emptyList();
+		return List.of(new SimpleGrantedAuthority(userEntity.getRole()));
 	}
 
 	@Override

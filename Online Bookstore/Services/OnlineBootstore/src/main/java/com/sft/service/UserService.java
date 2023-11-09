@@ -2,6 +2,7 @@ package com.sft.service;
 
 import com.sft.dto.UpdatePasswordDTO;
 import com.sft.dto.UserDTO;
+import com.sft.dto.UserLoginDTO;
 import com.sft.entity.UserEntity;
 import com.sft.exception.CustomException;
 import com.sft.exception.UserNotFoundException;
@@ -18,6 +19,6 @@ public interface UserService {
 	
 	UserEntity getUserByEmail(String email) throws UserNotFoundException;
 
-	String isUserAuthenticated(UserDTO userDTO) throws UserNotFoundException;
+	String isUserAuthenticated(UserLoginDTO userLoginDTO) throws UserNotFoundException;
 
 }

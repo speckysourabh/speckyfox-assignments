@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import com.sft.config.CustomUser;
 import com.sft.dto.UpdatePasswordDTO;
 import com.sft.dto.UserDTO;
+import com.sft.dto.UserLoginDTO;
 import com.sft.entity.UserEntity;
 import com.sft.exception.CustomException;
 import com.sft.exception.UserNotFoundException;
@@ -49,7 +50,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public boolean isUserExist(String email) {
-		return userRepository.existsByEmail(email);
+		return userRepository.findByEmail(email).isPresent();
 	}
 
 	@Override
@@ -84,12 +85,12 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public String isUserAuthenticated(UserDTO userDTO) throws UserNotFoundException {
+	public String isUserAuthenticated(UserLoginDTO userLoginDTO) throws UserNotFoundException {
 		UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
-				userDTO.getEmail(), userDTO.getPassword());
+				userLoginDTO.getEmail(), userLoginDTO.getPassword());
 		try {
 			Authentication authentication = authenticationManager.authenticate(authenticationToken);
-			return jwtService.generateToken(((CustomUser)authentication.getPrincipal()).getUsername());
+			return jwtService.generateToken(((CustomUser)authentication.getPrincipal()));
 		} catch (AuthenticationException authenticationException) {
 			throw new UserNotFoundException("User not found !");
 		} catch (Exception exception) {

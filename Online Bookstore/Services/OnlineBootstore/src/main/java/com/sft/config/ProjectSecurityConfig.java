@@ -34,6 +34,7 @@ public class ProjectSecurityConfig {
 				(requests) -> requests.requestMatchers(unsecuredUrls)
 						.permitAll().anyRequest().authenticated());
 		http.csrf(csrf -> csrf.disable());
+		http.cors(cors -> cors.disable());
 		http.addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class);
 		return http.build();
 	}
