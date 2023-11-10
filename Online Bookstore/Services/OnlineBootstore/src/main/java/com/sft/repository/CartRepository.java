@@ -20,5 +20,6 @@ public interface CartRepository extends JpaRepository<CartEntity, Long> {
 	@Query(nativeQuery = true, value = "delete from cartitems where user_email = :userName and book_id = :bookId")
 	void deleteItem(@Param("userName") String userName, @Param("bookId") Long bookId);
 
+	void deleteByUserEmailAndBookId(String userName, Long bookId);
 
 }
