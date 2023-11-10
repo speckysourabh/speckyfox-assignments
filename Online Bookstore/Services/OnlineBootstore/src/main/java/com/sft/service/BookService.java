@@ -13,4 +13,8 @@ public interface BookService {
 
 	BookDTO getBookById(Long bookId) throws ResourceNotFoundException;
 
+	void deleteBookById(Long bookId) throws ResourceNotFoundException;
+
+	void updateBookById(BookDTO bookDTO) throws ResourceNotFoundException;
+
 }
