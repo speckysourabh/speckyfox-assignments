@@ -63,7 +63,7 @@ public class CartServiceImpl implements CartService {
 	@Override
 	public Boolean deleteItem(String authHeader, Long bookId) {
 		String userName = jwtService.getEmailByToken(authHeader);
-		cartRepository.deleteItem(userName, bookId);
+		cartRepository.deleteByUserEmailAndBookId(userName, bookId);
 		return true;
 	}
 	
