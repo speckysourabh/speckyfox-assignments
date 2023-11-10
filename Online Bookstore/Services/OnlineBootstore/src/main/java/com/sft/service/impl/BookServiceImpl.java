@@ -43,4 +43,23 @@ public class BookServiceImpl implements BookService {
 		return modelMapper.map(response, BookDTO.class);
 	}
 
+	@Override
+    public void deleteBookById(Long bookId) throws ResourceNotFoundException {
+        BookEntity bookEntity = bookRepository.findById(bookId)
+                .orElseThrow(() -> new ResourceNotFoundException("Book not found with ID: " + bookId));
+        bookRepository.delete(bookEntity);
+    }
+	
+	@Override
+	public void updateBookById(BookDTO bookDTO) throws ResourceNotFoundException {
+	    BookEntity existingBook = bookRepository.findById(bookDTO.getId())
+	            .orElseThrow(() -> new ResourceNotFoundException("Book not found with ID: " + bookDTO.getId()));
+
+	    ModelMapper modelMapper = new ModelMapper();
+	    modelMapper.map(bookDTO, existingBook);
+
+	    bookRepository.save(existingBook);
+	}
+
+
 }
