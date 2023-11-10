@@ -21,7 +21,7 @@ import com.sft.service.CartService;
 
 @RestController
 @RequestMapping("${project.version}/carts")
-@CrossOrigin("http://localhost:3000/")
+@CrossOrigin(origins = "http://localhost:3000", allowedHeaders = "*")
 public class CartController {
 
 	@Autowired

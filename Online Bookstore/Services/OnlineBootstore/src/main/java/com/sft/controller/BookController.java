@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,12 +25,12 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @RequestMapping("${project.version}/books")
 @Slf4j
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class BookController {
 
 	@Autowired
 	private BookService bookService;
 
-	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@PostMapping
 	public ResponseEntity<BookDTO> addBook(@RequestBody BookDTO bookDTO) {
 		log.info("Add book api called. Data - {}", bookDTO);
@@ -37,7 +38,6 @@ public class BookController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(response);
 	}
 
-	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@GetMapping
 	public ResponseEntity<List<BookDTO>> getAllBooks() {
 		log.info("Get all book api called");
@@ -45,7 +45,6 @@ public class BookController {
 		return ResponseEntity.status(HttpStatus.OK).body(response);
 	}
 
-	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@GetMapping("{bookId}")
 	public ResponseEntity<BookDTO> getBook(@PathVariable Long bookId) throws ResourceNotFoundException {
 		log.info("Get book by ID api called. Book Id - {}", bookId);

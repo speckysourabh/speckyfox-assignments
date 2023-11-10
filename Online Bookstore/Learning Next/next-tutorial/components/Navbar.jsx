@@ -1,6 +1,8 @@
 "use client";
 
 import { setToken } from "@redux/slice";
+import MyRole from "@utils/MyRole";
+import parseJwt from "@utils/TokenUtils";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
@@ -9,6 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 const Navbar = () => {
   const token = sessionStorage.getItem("token");
+  const user = token ? parseJwt(token) : null;
   const router = useRouter();
   const dispatch = useDispatch();
 
@@ -25,6 +28,11 @@ const Navbar = () => {
     router.push("/books");
   }
 
+  function handleHomeClick() {
+    if (user.role === MyRole.ADMIN) router.push("/dashboard");
+    else router.push("/bookstore");
+  }
+
   return (
     <div className="navbar-container flex justify-between items-center bg-teal-500 text-white p-5 fixed w-full h-20">
       <Link href={"./"}>
@@ -36,6 +44,9 @@ const Navbar = () => {
       <div className="nav-items">
         {token ? (
           <ul className="nav-ul flex">
+            <li className="mr-7 cursor-pointer">
+              <button onClick={handleHomeClick}>Home</button>
+            </li>
             <li className="mr-7 cursor-pointer">
               <button onClick={handleBooksClick}>Books</button>
             </li>

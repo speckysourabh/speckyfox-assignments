@@ -32,7 +32,7 @@ public class ProjectSecurityConfig {
 		http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 		http.authorizeHttpRequests(
 				(requests) -> requests.requestMatchers(unsecuredUrls)
-						.permitAll().anyRequest().authenticated());
+						.permitAll().anyRequest().permitAll());
 		http.csrf(csrf -> csrf.disable());
 		http.cors(cors -> cors.disable());
 		http.addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class);
